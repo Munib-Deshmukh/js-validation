@@ -1,0 +1,16 @@
+.container{
+    width: 1024px;
+
+}
+#uid,#pid,#eid,#zid,#aid,#cid,
+#nid{
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Valadation Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="botstrap.min.js"></script>
+    <script src="Jquery.js"></script>
+    <script src="Vladationscript.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+<div class="container">
+    <div class="container-fluid col-sm-offset-2">
+<h1>Registration Form</h1>
+<form name='registration' onsubmit="return formValidation();" class="form-horizontal">
+    <div class="form-group">
+        <label for="userid" class="control-label col-sm-2">User id:</label>
+        <div class="col-sm-4">
+        <input type="text" name="userid" size="12" class="form-control" /><span id="uid"></span>
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="passid" class="control-label col-sm-2">Password:</label>
+        <div class="col-sm-4">
+        <input type="password" name="passid" size="12" class="form-control" /><span id="pid"></span>
+    </div>
+        </div>
+    <div class="form-group">
+        <label for="username" class="control-label col-sm-2">Name:</label>
+    <div class="col-sm-4">
+    <input type="text" name="username" size="50" class="form-control" /><span id="nid"></span>
+        </div>
+        </div>
+    <div class="form-group">
+       <label for="address" class="control-label col-sm-2">Address:</label>
+    <div class="col-sm-4">
+       <input type="text" name="address" size="50" class="form-control" /><span id="aid"></span>
+        </div>
+        </div>
+    <div class="form-group">
+        <label for="country" class="control-label col-sm-2" >Country:</label>
+
+    <div class="col-sm-2">
+        <select name="country" >
+            <option selected="" value="Default" >Please select the Country</option>
+            <option value="AF">Australia</option>
+            <option value="AL">Canada</option>
+            <option value="DZ">India</option>
+            <option VALUE="PAK">Pakistan</option>
+            <option value="AS">Russia</option>
+            <option value="AD">USA</option>
+        </select><span id="cid"></span>
+        </div>
+        </div>
+    <div class="form-group">
+        <label for="zip" class="control-label col-sm-2">ZIP Code:</label>
+    <div class="col-sm-4">
+       <input type="text" name="zip" class="form-control" /><span id="zid"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="control-label col-sm-2">Email:</label>
+
+        <div class="col-sm-4">
+            <input type="text" name="email" size="50" class="form-control" /><span id="eid"></span>
+        </div>
+    </div>
+    <div class="form-group">
+       <label id="gender" class="control-label col-sm-2">Sex:</label>
+    <div class="col-sm-offset-0 col-sm-4">
+        <div class="radio">
+            <label>
+                <input type="radio" name="msex" value="Male"  />
+            Male
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="fsex" value="Female"  />
+                Female
+            </label>
+        </div>
+    </div><span id="sid"></span>
+    </div>
+    <div class="form-group">
+       <label class="control-label col-sm-2">Language:</label>
+    <div class="col-sm-offset-0 col-sm-4">
+        <div class="checkbox ">
+            <label>
+             <input type="checkbox" name="en" value="en" />
+            English
+            </label>
+        </div>
+        <div class="checkbox ">
+            <label>
+                <input type="checkbox" name="nonen" value="noen" />
+            Non English
+            </label>
+        </div>
+        </div>
+        </div><span id="lid"></span>
+    <div class="form-group">
+        <label for="desc" class="control-label col-sm-2">About:</label>
+        <textarea name="desc" id="desc" class="form-control col-sm-offset-1" rows="3"></textarea>
+    </div>
+        <div class="col-sm-offset-5 col-sm-2">
+        <input type="submit" name="submit" value="Submit" class="form-control btn btn-default"/>
+            </div>
+</form>
+        </div>
+</div>
+</body>
+</html>
